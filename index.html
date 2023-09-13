@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GeekWave</title>
+</head>
+<body>
+    <center>
+    <button id="aumentarFonte" class="botao">Aumentar Fonte</button>
+    <button id="diminuirFonte" class="botao">Diminuir Fonte</button>
+    </center>
+    <header>
+        <div class="logo">
+        <img src="moeda.png" alt="Moeda">
+        </div>
+        <h1>GeekWave</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#wcag">WCAG</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main> 
+        <h2>Venha ver o que está rolando no mundo geek!</h2>
+        <div class="canu">
+            <img src="canu.png" alt="cano">
+            </div>
+        <div class="mariozin">
+        <img src="mario.png" alt="super mario">
+        </div>
+        <div class="chao">
+            <img src="chaoo1.png" alt="chão">
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 class="nana">Noticias</h1>
+            <br>
+            <br>
+        <section class="news">
+            <article>
+                <h2>Black Butler</h2>
+                <a href="noticia1.html">
+                <p>Black Butler terá nova temporada em 2024.</p>
+                <img src="https://prod.assets.earlygamecdn.com/images/Black-Butler-Revival.jpg?transform=banner2x_webp" alt="menino de cabelo azul escuro ao lado de um homem de cabelos negros">
+                </a>
+            </article>
+
+            <article>
+                <h2>One Piece</h2>
+                <a href="noticia2.html">
+                <p>1ª temporada de One Piece tem mais de 18 milhões de visualizações na Netflix.</p>
+                <img src="https://s2-techtudo.glbimg.com/W_xBudWe7EAFenbLUsqjWvXYETE=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/Q/J/BRGwUNSjy67yA8F6K9Pw/one-piece-netflix-series-adaptation-live-action-1280x720-1.jpg" alt="Quatro homens e uma mulher em frente a um navio pirata">
+                </a>
+            </article>
+
+            <article>
+                <h2>League of legends</h2>
+                <a href="noticia3.html">
+                <p>LoL: Conheça Briar, nova campeã que tem mecânica nunca antes vista no jogo.</p>
+                <img src="https://dotesports.com/wp-content/uploads/2023/08/who-voices-briar-in-league-of-legends-julie-nathanson-voice-actor-lol-briar.png?w=1200" alt="`mulher de pele palida, olhos brancos, cabelos brancos com alguns tons de rosa">
+                </a>
+            </article>
+
+            <!-- Adicione mais notícias conforme necessário -->
+        </section>
+
+        <section class="video-container">
+            <h2>Vídeo Destaque da semana</h2>
+            <center>
+            <button id="playPauseButton" class="botao">Play/Pause</button>
+            </center>
+            <video controls>
+            <source src="briar.mp4" type="video/mp4"> 
+            <track kind="subtitles" srclang="pt-br" label="pt-br" src="legendas.vtt" default>
+            
+        </video>
+        </section>
+
+        <section class="music">
+            <h2>Músicas Geek</h2>
+            <h3>Playlist do dia</h3>
+            <div class="star">
+            <img src="https://i.pinimg.com/236x/5a/3b/9e/5a3b9e1066e367327b486a8d7114331f.jpg">
+            </div>
+            <audio controls>
+                <source src="7mz.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+    
+            <audio controls>
+                <source src="mhrap.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+
+            <audio controls>
+                <source src="tauz.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+        </section>
+        <div class="star2">
+        <img src="https://i.pinimg.com/236x/5a/3b/9e/5a3b9e1066e367327b486a8d7114331f.jpg">
+    </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Notícias Geek</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const aumentarBotao = document.getElementById('aumentarFonte');
+            const diminuirBotao = document.getElementById('diminuirFonte');
+            const corpoDocumento = document.body;
+
+            // Função para aumentar a fonte
+            aumentarBotao.addEventListener('click', function () {
+                const estiloCorpo = window.getComputedStyle(corpoDocumento);
+                const tamanhoFonteAtual = parseFloat(estiloCorpo.fontSize);
+                const novoTamanhoFonte = tamanhoFonteAtual * 1.2; // Aumenta em 20%
+                corpoDocumento.style.fontSize = novoTamanhoFonte + 'px';
+            });
+
+            // Função para diminuir a fonte
+            diminuirBotao.addEventListener('click', function () {
+                const estiloCorpo = window.getComputedStyle(corpoDocumento);
+                const tamanhoFonteAtual = parseFloat(estiloCorpo.fontSize);
+                const novoTamanhoFonte = tamanhoFonteAtual / 1.2; // Diminui em 20%
+                corpoDocumento.style.fontSize = novoTamanhoFonte + 'px';
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+    const aumentarBotao = document.getElementById('aumentarFonte');
+    const diminuirBotao = document.getElementById('diminuirFonte');
+    const corpoDocumento = document.body;
+    const playPauseButton = document.getElementById('playPauseButton');
+    const video = document.querySelector('video');
+
+    // Function to increase font size
+    aumentarBotao.addEventListener('click', function () {
+        const estiloCorpo = window.getComputedStyle(corpoDocumento);
+        const tamanhoFonteAtual = parseFloat(estiloCorpo.fontSize);
+        const novoTamanhoFonte = tamanhoFonteAtual * 1.2; // Increase by 20%
+        corpoDocumento.style.fontSize = novoTamanhoFonte + 'px';
+    });
+
+    // Function to decrease font size
+    diminuirBotao.addEventListener('click', function () {
+        const estiloCorpo = window.getComputedStyle(corpoDocumento);
+        const tamanhoFonteAtual = parseFloat(estiloCorpo.fontSize);
+        const novoTamanhoFonte = tamanhoFonteAtual / 1.2; // Decrease by 20%
+        corpoDocumento.style.fontSize = novoTamanhoFonte + 'px';
+    });
+
+    // Function to toggle video play/pause
+    playPauseButton.addEventListener('click', function () {
+        if (video.paused) {
+            video.play();
+            playPauseButton.textContent = 'Pause';
+        } else {
+            video.pause();
+            playPauseButton.textContent = 'Play';
+        }
+    });
+});
+    </script>
+</body>
+</html>
