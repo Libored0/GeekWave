@@ -1,0 +1,215 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1d1d1d;
+    color: #fff;
+    background: url('https://i.pinimg.com/564x/fc/ad/5c/fcad5ce5643c8a325fe0bebad9b4f654.jpg');
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+
+.botao {
+    background-color: #ff6600; /* Cor de fundo azul */
+    color: white; /* Cor do texto branca */
+    padding: 10px 20px; /* Espaçamento interno dos botões */
+    border: none; /* Remova a borda padrão */
+    cursor: pointer;
+    margin: 5px; /* Espaçamento entre os botões */
+    border-radius: 5px; /* Borda arredondada */
+}
+
+
+header {
+    background-color: #ff6600;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra no cabeçalho */
+    display: flex; /* Para alinhar elementos horizontalmente */
+    align-items: center; /* Alinhar elementos verticalmente */
+}
+
+.logo {
+    margin-right: auto; /* Empurrar para o canto superior esquerdo */
+}
+
+.logo img {
+    width: 100px; /* Largura da imagem do logo */
+    height: auto; /* Altura automática, para manter a proporção */
+}
+
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+    flex-grow: 0.8; 
+    text-align: center; 
+}
+
+.nana{
+    color: black;
+}
+
+h2{
+    color: black;
+    text-align: center;
+}
+
+h3{
+    color: black;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centraliza a lista de navegação */
+}
+
+nav ul li {
+    margin: 0 20px; /* Espaço entre os itens da lista */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold; /* Texto em negrito */
+    font-size: 18px;
+    transition: color 0.3s; /* Transição suave da cor */
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Cor amarela quando passar o mouse */
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra no conteúdo principal */
+}
+
+/* Estilos para as notícias */
+.news article {
+    margin-bottom: 20px;
+    color: black;
+}
+
+.news img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.news img:hover {
+    transform: scale(1.1); /* Aplica um aumento de escala de 10% quando o mouse passa sobre a imagem */
+}
+
+/* Estilos para o vídeo */
+.video {
+    margin-top: 20px;
+}
+
+.video-container {
+    max-width: 300px; /* Largura máxima do vídeo */
+    margin: 0 auto; /* Centraliza o vídeo horizontalmente */
+}
+
+.video-container video {
+    width: 100%; /* Garante que o vídeo se ajuste à largura máxima do contêiner */
+}
+
+
+.mariozin{
+    text-align: right;
+    background-color: rgb(33, 137, 255);
+    margin-bottom: auto;
+
+}
+
+.mariozin img {
+    bottom: -100px; 
+    right: 0;
+    align-items: flex-end;
+    margin-top: 38px;
+}
+
+.canu {
+    position: relative;
+    width: 50px; 
+    height: 50px; 
+}
+
+.canu img {
+    position: absolute;
+    bottom: 0; /* A imagem estará no canto inferior da div */
+    left: 0; /* A imagem estará no canto esquerdo da div */
+    bottom: -425px; /* Ajuste esta margem conforme necessário para mover a imagem para baixo */
+    
+}
+
+.chao {
+   margin-right: auto;
+   margin-left: -350px;
+   position: absolute;
+   
+}
+
+.chao img {
+    position: absolute;
+    bottom: 0; /* A imagem estará no canto inferior da div */
+    bottom:-490px; /* Ajuste esta margem conforme necessário para mover a imagem para baixo */
+    margin-right: 100px;
+    margin-left: auto;
+    transform: translateX(-100px); 
+
+}
+
+
+/* Estilos para as músicas */
+.music audio {
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.star{
+    position: relative;
+    width: 50px; 
+    height: 50px; 
+}
+
+.star img{
+    position: absolute;
+    bottom: 0; /* A imagem estará no canto inferior da div */
+    left: 0; /* A imagem estará no canto esquerdo da div */
+    bottom: -200px;
+
+}
+
+.star2{
+    float: right;
+}
+
+.star2 img{
+    position: absolute;
+    bottom: 0; /* A imagem estará no canto inferior da div */
+    right: 385px; /* A imagem estará no canto esquerdo da div */
+    bottom: -2410px;
+
+}
+
+footer {
+    background-color: #ff6600;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2); /* Sombra no rodapé */
+}
